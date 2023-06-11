@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Site Meta Data -->
+  <title>TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model</title>
+  <meta name="description" content="">
+  <meta name="author" content="Abael He<abaelhe@icloud.com>">
+
+  <!-- Style Meta Data -->
+  <link rel="stylesheet" href="https://abaelhe.github.io/theme/css/notebook.css" type="text/css" />
+  <link rel="shortcut icon" href="https://abaelhe.github.io/">
+
+  <!-- Feed Meta Data -->
+  <link href="https://abaelhe.github.io/" type="application/atom+xml" rel="alternate" title="Abael He's Site ATOM Feed" />
+
+  <!-- Twitter Feed -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:image" content="https://abaelhe.github.io/">
+
+<meta name="twitter:creator" content="">
+<meta name="twitter:url" content="https://abaelhe.github.io/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.html">
+<meta name="twitter:title" content="Abael He's Site ~ TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model">
+<meta name="twitter:description" content="<p>content/docs/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.ipynb</p>">
+
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="Abael He's Site ~ TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model" />
+<meta property="og:description" content="<p>content/docs/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.ipynb</p>" />
+<meta property="og:image" content="" />
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <aside>
+    <p><a href="https://abaelhe.github.io"><img id="avatar" src="https://abaelhe.github.io/"></a></p>
+    <h1>Abael He's Site</h1>
+    <p></p>
+    <hr>
+    <h2>Social</h2>
+    <ul class="social">
+      <li style="list-style-image : url(https://abaelhe.github.io/theme/images/icons/you can add links in your config file.png);"><a href="#">You can add links in your config file</a></li>
+      <li style="list-style-image : url(https://abaelhe.github.io/theme/images/icons/github.png);"><a href="https://github.com/abaelhe">Github</a></li>
+      <li style="list-style-image : url(https://abaelhe.github.io/theme/images/icons/rss.png);"><a href="https://abaelhe.github.io/" rel="alternate"><i class="icon-bookmark icon-large"></i>Atom feed</a></li>
+    </ul>
+    <h2>Categories</h2>
+    <ul class="navbar">
+      <li class="active"><a href="https://abaelhe.github.io/category/ai.html">AI</a></li>
+      <li><a href="https://abaelhe.github.io/category/mathematics-ai-nlp-python.html">Mathematics, AI, NLP, Python</a></li>
+    </ul> 
+  </aside>
+
+  <!-- Content -->
+  <article>
+<section id="content">
+    <article>
+        <header class="post_list">
+            <h2 class="post_title"><a href="https://abaelhe.github.io/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.html" rel="bookmark" title="Permalink to TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model">TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model</a></h2>
+            <span>Par </span>
+            <a href="https://abaelhe.github.io/author/abael-he.html">@Abael He<abaelhe@icloud.com></a>
+            <span> dans </span>
+            <span class="post_category"><a href="https://abaelhe.github.io/category/ai.html" rel="bookmark" title="Permalink to AI">[ AI ]</a></span>
+            <span> le </span>
+            <span class="post_date">Sun 11 June 2023</span>
+            <div><span>Tags : </span>
+                <span><a href="https://abaelhe.github.io/tag/ai.html">#AI, </a></span>
+            </div>
+
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;" title="Twitter" href="https://twitter.com/share?url=https://abaelhe.github.io/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.html&text=TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model&via=">Twitter</a></span>
+
+                <span class="gplus"><a target="_blank" title="Google +" href="https://plus.google.com/share?url=https://abaelhe.github.io/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.html&hl=fr" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;">Google+</a></span>
+
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" href="https://www.facebook.com/sharer.php?u=https://abaelhe.github.io/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.html&t=TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model">Facebook</a></span>
+
+                <a  target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=<https://abaelhe.github.io/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.html&title=TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;">Linkedin</a>
+
+                <span class="mail"><a href="mailto:?subject=TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model&amp;body=Viens découvrir un article à propos de [TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model] sur le site de Abael He<abaelhe@icloud.com>. https://abaelhe.github.io/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.html" title="Share by Email" target="_blank">Mail</a></span>
+            </div>
+        </header>
+        <div class="entry-content">
+            <p>{% notebook docs/TensorFlow-examples/tensorflow_v2/notebooks/4_Utils/save_restore_model.ipynb %}</p>
+        </div>
+    </article>
+</section>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <address id="about" class="vcard body">
+      Blog powered by <a href="http://getpelican.com/">Pelican</a>, 
+      which takes great advantage of <a href="http://python.org">Python</a>.
+      Theme <a href="https://github.com/quack1/notebook/">Notebook</a> by <a href="https://twitter.com/_Quack1">@Quack1</a>.
+    </address>
+  </footer>
+
+
+</body>
+</html>
