@@ -4,6 +4,7 @@
 AUTHOR = 'Abael He<abaelhe@icloud.com>'
 SITENAME = "Abael He's Site"
 SITEURL = 'https://blog.bits.army'
+THEME = 'pelican-themes/pelican-elegant'
 
 PATH = 'content'
 
