@@ -18,4 +18,5 @@ Thumbs.db
 
 
 # github pages
-pelican/output/
+pelican/output/*
+pelican/__pycache__/*
