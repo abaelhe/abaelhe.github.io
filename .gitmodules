@@ -4,3 +4,6 @@
 [submodule "pelican/pelican"]
 	path = pelican/pelican
 	url = git@github.com:getpelican/pelican.git
+[submodule "pelican/themes/elegant"]
+	path = pelican/themes/elegant
+	url = git@github.com:Pelican-Elegant/elegant.git
