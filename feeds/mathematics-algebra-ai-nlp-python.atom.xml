@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Abael He's Site - Mathematics, Algebra, AI, NLP, Python</title><link href="https://abaelhe.github.io/" rel="alternate"></link><link href="https://abaelhe.github.io/feeds/mathematics-algebra-ai-nlp-python.atom.xml" rel="self"></link><id>https://abaelhe.github.io/</id><updated>2024-01-09T21:54:00+08:00</updated><entry><title>SciTech-Math-AdvancedAlgebra- Cramer' Rule (Gabriel Cramer (1704–1752)) + Gauss-Jordan Method</title><link href="https://abaelhe.github.io/SciTech-Math-AdvancedAlgebra-Cramer'%20Rule%20and%20Gauss-Jordan%20Method.html" rel="alternate"></link><published>2024-01-09T21:54:00+08:00</published><updated>2024-01-09T21:54:00+08:00</updated><author><name>Abael He</name></author><id>tag:abaelhe.github.io,2024-01-09:/SciTech-Math-AdvancedAlgebra-Cramer' Rule and Gauss-Jordan Method.html</id><summary type="html">&lt;p&gt;SciTech-Math-AdvancedAlgebra- Cramer' Rule (Gabriel Cramer (1704–1752)) + Gauss-Jordan Method&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;OPEN TEXTBOOK PROJECTS&lt;/strong&gt;:
+* from &lt;a href="https://math.libretexts.org/Bookshelves/Precalculus/Precalculus_1e_(OpenStax)/09%3A_Systems_of_Equations_and_Inequalities/9.08%3A_Solving_Systems_with_Cramer's_Rule"&gt;math.libretexts.org&lt;/a&gt;
+  The LibreTexts libraries are &lt;a href="https://www.nice.com/resources/cxone-expert-knowledge-management"&gt;Powered by NICE CXone Expert&lt;/a&gt; and are supported by the Department of Education Open Textbook Pilot Project, the UC Davis Office of the Provost, the UC Davis Library, the California State University Affordable Learning Solutions Program, and Merlot. We also acknowledge previous National Science Foundation support under grant numbers 1246120, 1525057, and 1413739
+  https://www.deanza.edu/faculty/bloomroberta/math11/afm3files.html.html
+  Applied Finite Mathematics 3rd Edition Files&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;from &lt;a href="https://openstax.org/books/college-algebra-2e/pages/7-8-solving-systems-with-cramers-rule"&gt;openstax.org&lt;/a&gt;
+  OpenStax is part of Rice University, which is a 501(c)(3) nonprofit. Give today and help us reach more students.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;VOCABULARY&lt;/strong&gt;
+ech·e·lon, | ˈeSHəˌlän |,
+&lt;strong&gt;noun&lt;/strong&gt;
+1. a level or rank in an organization, a profession, or society: the upper echelons of the business world.
+2. Military a formation of troops, ships, aircraft, or vehicles in parallel rows with the end of each row projecting further than the one in front: the regiment lined up shoulder to shoulder in three tight echelons | [mass noun] : there are two planes, lying in echelon with one another.
+  • [often with modifier] a part of a military force differentiated by position in battle or by function: the rear echelon.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;verb&lt;/strong&gt; [with object] Military
+arrange in an echelon formation: (as noun echeloning) : the echeloning of fire teams.
+&lt;strong&gt;ORIGIN&lt;/strong&gt;
+late 18th century (in echelon (sense 2 of the noun)): from French échelon, from échelle ‘ladder’, from Latin scala.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://math.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Finite_Mathematics_(Sekhon_and_Bloom)/02%3A_Matrices/2.02%3A_Systems_of_Linear_Equations_and_the_Gauss-Jordan_Method"&gt;2.2: Systems of Linear Equations and the Gauss-Jordan Method&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Learning Objectives&lt;/strong&gt;
+In this section you will learn to
+* Represent &lt;code&gt;a system of linear equations&lt;/code&gt; as &lt;code&gt;an augmented matrix&lt;/code&gt;
+* Solve the system using &lt;code&gt;elementary row operations&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In this section, we learn to solve systems of linear equations using a process called the Gauss-Jordan method.
+The process:
+1. begins by first expressing the system as a matrix,
+  we expressed the system of equations as  𝐴𝑋=𝐵 , where:
+    * 𝐴  represented the coefficient matrix,
+    * 𝐵  the matrix of constant terms.
+    * [𝐴𝐵] As an augmented matrix, we write the matrix as  [𝐴𝐵] .
+    * It is clear that all of the information is maintained in this matrix form,
+      and only the letters  𝑥 , 𝑦  and  𝑧  are missing. A student may choose to write  𝑥 ,  𝑦  and  𝑧  on top of the first three columns to help ease the transition.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;and then reducing it to an equivalent system by simple row operations.
+  Now we list the &lt;code&gt;three row operations&lt;/code&gt; the &lt;strong&gt;Gauss-Jordan method&lt;/strong&gt; employs. Row Operations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Any two rows&lt;/strong&gt; in the augmented matrix &lt;strong&gt;may be interchanged&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Any row&lt;/strong&gt; &lt;strong&gt;may be multiplied by a non-zero constant&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A constant multiple of a row&lt;/strong&gt; &lt;strong&gt;may be added to another row&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The process is continued until the solution is obvious from the matrix.
+   &lt;strong&gt;The &lt;code&gt;reduced row echelon form&lt;/code&gt; of the coefficient matrix&lt;/strong&gt;:
+   has &lt;code&gt;1's along the main diagonal and zeros elsewhere&lt;/code&gt;.
+  The solution is readily obtained from this form.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;The matrix that represents the system&lt;/code&gt; is called the &lt;code&gt;augmented matrix&lt;/code&gt;,
+  and &lt;code&gt;the arithmetic manipulation that is used to move&lt;/code&gt;,
+  from &lt;code&gt;a system&lt;/code&gt; to &lt;code&gt;a reduced equivalent system&lt;/code&gt; is called &lt;code&gt;a row operation&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Once a system is expressed as an augmented matrix,
+the &lt;strong&gt;&lt;code&gt;Gauss-Jordan method&lt;/code&gt;&lt;/strong&gt; &lt;strong&gt;reduces the system,
+  into&lt;/strong&gt; &lt;code&gt;a series of equivalent systems&lt;/code&gt; by &lt;code&gt;using the row operations&lt;/code&gt;.
+ This &lt;code&gt;row reduction&lt;/code&gt; continues until the system is expressed in what is called &lt;strong&gt;&lt;code&gt;the reduced row echelon form&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The method is not much different form the algebraic operations we employed in the elimination method in the first chapter. The basic difference is that &lt;code&gt;it is algorithmic in nature&lt;/code&gt;, &lt;strong&gt;and, therefore, can easily be programmed on a computer&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We will next solve a system of two equations with two unknowns, using the elimination method, and then show that the method is analogous to the Gauss-Jordan method.
+&lt;strong&gt;&lt;code&gt;Gauss-Jordan Method&lt;/code&gt;&lt;/strong&gt;
+* Write the augmented matrix.
+* Interchange rows if necessary to obtain a non-zero number in the first row, first column.
+* Use a row operation to get a 1 as the entry in the first row and first column.
+  Use row operations to make all other entries as zeros in column one.
+* Interchange rows if necessary to obtain a nonzero number in the second row, second column.
+  Use a row operation to make this entry 1. Use row operations to make all other entries as zeros in column two.
+* Repeat step 5 for row 3, column 3.
+* Continue moving along the main diagonal until you reach the last row, or until the number is zero.
+* The final matrix is called the &lt;code&gt;reduced row-echelon form&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;[&lt;strong&gt;9.8: Solving Systems with Cramer's Rule&lt;/strong&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Learning Objectives&lt;/strong&gt;
+* Evaluate 2 × 2 determinants.: Use Cramer’s Rule to solve a system of equations &lt;strong&gt;in two variables&lt;/strong&gt;.
+* Evaluate 3 × 3 determinants.: Use Cramer’s Rule to solve a system of three equations &lt;strong&gt;in three variables&lt;/strong&gt;.
+* Know &lt;strong&gt;&lt;code&gt;the properties of determinants&lt;/code&gt;&lt;/strong&gt;.
+  &lt;strong&gt;&lt;code&gt;PROPERTIES OF DETERMINANTS&lt;/code&gt;&lt;/strong&gt;
+    * If the matrix is in upper triangular form, the determinant equals the product of entries down the main diagonal.
+    * When two rows are interchanged, the determinant changes sign.
+    * If either two rows or two columns are identical, the determinant equals zero.
+    * If a matrix contains either a row of zeros or a column of zeros, the determinant equals zero.
+    * The determinant of an inverse matrix  𝐴−1  is the reciprocal of the determinant of the matrix 𝐴.
+    * If any row or column is multiplied by a constant, the determinant is multiplied by the same factor.&lt;/p&gt;</content><category term="Mathematics, Algebra, AI, NLP, Python"></category><category term="Mathematics"></category><category term="Algebra"></category><category term="AI"></category><category term="NLP"></category><category term="Python"></category><category term="publishing"></category><category term="Management"></category></entry></feed>

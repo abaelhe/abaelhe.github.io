@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Abael He's Site - SciTech-Math-AdvancedAlgebra- Cramer' Rule (Gabriel Cramer (1704–1752)) + Gauss-Jordan Method</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://abaelhe.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Abael He's Site Full Atom Feed" />
+        <link href="https://abaelhe.github.io/feeds/mathematics-algebra-ai-nlp-python.atom.xml" type="application/atom+xml" rel="alternate" title="Abael He's Site Categories Atom Feed" />
+
+
+
+
+    <meta name="tags" content="Mathematics" />
+    <meta name="tags" content="Algebra" />
+    <meta name="tags" content="AI" />
+    <meta name="tags" content="NLP" />
+    <meta name="tags" content="Python" />
+    <meta name="tags" content="publishing" />
+    <meta name="tags" content="Management" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="https://abaelhe.github.io/">Abael He's Site</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="https://abaelhe.github.io/category/ai.html" >AI</a></li>
+            <li><a href="https://abaelhe.github.io/category/mathematics-ai-nlp-python.html" >Mathematics, AI, NLP, Python</a></li>
+            <li><a href="https://abaelhe.github.io/category/mathematics-algebra-ai-nlp-python.html"  aria-current="page" >Mathematics, Algebra, AI, NLP, Python</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <header>
+    <h2>
+      <a href="https://abaelhe.github.io/SciTech-Math-AdvancedAlgebra-Cramer' Rule and Gauss-Jordan Method.html" rel="bookmark"
+         title="Permalink to SciTech-Math-AdvancedAlgebra- Cramer' Rule (Gabriel Cramer (1704–1752)) + Gauss-Jordan Method">SciTech-Math-AdvancedAlgebra- Cramer' Rule (Gabriel Cramer (1704–1752)) + Gauss-Jordan Method</a></h2>
+ 
+  </header>
+  <p><strong>OPEN TEXTBOOK PROJECTS</strong>:
+* from <a href="https://math.libretexts.org/Bookshelves/Precalculus/Precalculus_1e_(OpenStax)/09%3A_Systems_of_Equations_and_Inequalities/9.08%3A_Solving_Systems_with_Cramer's_Rule">math.libretexts.org</a>
+  The LibreTexts libraries are <a href="https://www.nice.com/resources/cxone-expert-knowledge-management">Powered by NICE CXone Expert</a> and are supported by the Department of Education Open Textbook Pilot Project, the UC Davis Office of the Provost, the UC Davis Library, the California State University Affordable Learning Solutions Program, and Merlot. We also acknowledge previous National Science Foundation support under grant numbers 1246120, 1525057, and 1413739
+  https://www.deanza.edu/faculty/bloomroberta/math11/afm3files.html.html
+  Applied Finite Mathematics 3rd Edition Files</p>
+<ul>
+<li>from <a href="https://openstax.org/books/college-algebra-2e/pages/7-8-solving-systems-with-cramers-rule">openstax.org</a>
+  OpenStax is part of Rice University, which is a 501(c)(3) nonprofit. Give today and help us reach more students.</li>
+</ul>
+<p><strong>VOCABULARY</strong>
+ech·e·lon, | ˈeSHəˌlän |,
+<strong>noun</strong>
+1. a level or rank in an organization, a profession, or society: the upper echelons of the business world.
+2. Military a formation of troops, ships, aircraft, or vehicles in parallel rows with the end of each row projecting further than the one in front: the regiment lined up shoulder to shoulder in three tight echelons | [mass noun] : there are two planes, lying in echelon with one another.
+  • [often with modifier] a part of a military force differentiated by position in battle or by function: the rear echelon.</p>
+<p><strong>verb</strong> [with object] Military
+arrange in an echelon formation: (as noun echeloning) : the echeloning of fire teams.
+<strong>ORIGIN</strong>
+late 18th century (in echelon (sense 2 of the noun)): from French échelon, from échelle ‘ladder’, from Latin scala.</p>
+<p><a href="https://math.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Finite_Mathematics_(Sekhon_and_Bloom)/02%3A_Matrices/2.02%3A_Systems_of_Linear_Equations_and_the_Gauss-Jordan_Method">2.2: Systems of Linear Equations and the Gauss-Jordan Method</a></p>
+<p><strong>Learning Objectives</strong>
+In this section you will learn to
+* Represent <code>a system of linear equations</code> as <code>an augmented matrix</code>
+* Solve the system using <code>elementary row operations</code>.</p>
+<p>In this section, we learn to solve systems of linear equations using a process called the Gauss-Jordan method.
+The process:
+1. begins by first expressing the system as a matrix,
+  we expressed the system of equations as  𝐴𝑋=𝐵 , where:
+    * 𝐴  represented the coefficient matrix,
+    * 𝐵  the matrix of constant terms.
+    * [𝐴𝐵] As an augmented matrix, we write the matrix as  [𝐴𝐵] .
+    * It is clear that all of the information is maintained in this matrix form,
+      and only the letters  𝑥 , 𝑦  and  𝑧  are missing. A student may choose to write  𝑥 ,  𝑦  and  𝑧  on top of the first three columns to help ease the transition.</p>
+<ol>
+<li>
+<p>and then reducing it to an equivalent system by simple row operations.
+  Now we list the <code>three row operations</code> the <strong>Gauss-Jordan method</strong> employs. Row Operations:</p>
+<ul>
+<li><strong>Any two rows</strong> in the augmented matrix <strong>may be interchanged</strong>.</li>
+<li><strong>Any row</strong> <strong>may be multiplied by a non-zero constant</strong>.</li>
+<li><strong>A constant multiple of a row</strong> <strong>may be added to another row</strong>.</li>
+</ul>
+</li>
+<li>
+<p>The process is continued until the solution is obvious from the matrix.
+   <strong>The <code>reduced row echelon form</code> of the coefficient matrix</strong>:
+   has <code>1's along the main diagonal and zeros elsewhere</code>.
+  The solution is readily obtained from this form.</p>
+</li>
+</ol>
+<p><code>The matrix that represents the system</code> is called the <code>augmented matrix</code>,
+  and <code>the arithmetic manipulation that is used to move</code>,
+  from <code>a system</code> to <code>a reduced equivalent system</code> is called <code>a row operation</code>.</p>
+<p>Once a system is expressed as an augmented matrix,
+the <strong><code>Gauss-Jordan method</code></strong> <strong>reduces the system,
+  into</strong> <code>a series of equivalent systems</code> by <code>using the row operations</code>.
+ This <code>row reduction</code> continues until the system is expressed in what is called <strong><code>the reduced row echelon form</code></strong>.</p>
+<p>The method is not much different form the algebraic operations we employed in the elimination method in the first chapter. The basic difference is that <code>it is algorithmic in nature</code>, <strong>and, therefore, can easily be programmed on a computer</strong>.</p>
+<p>We will next solve a system of two equations with two unknowns, using the elimination method, and then show that the method is analogous to the Gauss-Jordan method.
+<strong><code>Gauss-Jordan Method</code></strong>
+* Write the augmented matrix.
+* Interchange rows if necessary to obtain a non-zero number in the first row, first column.
+* Use a row operation to get a 1 as the entry in the first row and first column.
+  Use row operations to make all other entries as zeros in column one.
+* Interchange rows if necessary to obtain a nonzero number in the second row, second column.
+  Use a row operation to make this entry 1. Use row operations to make all other entries as zeros in column two.
+* Repeat step 5 for row 3, column 3.
+* Continue moving along the main diagonal until you reach the last row, or until the number is zero.
+* The final matrix is called the <code>reduced row-echelon form</code>.</p>
+<p>[<strong>9.8: Solving Systems with Cramer's Rule</strong>]</p>
+<p><strong>Learning Objectives</strong>
+* Evaluate 2 × 2 determinants.: Use Cramer’s Rule to solve a system of equations <strong>in two variables</strong>.
+* Evaluate 3 × 3 determinants.: Use Cramer’s Rule to solve a system of three equations <strong>in three variables</strong>.
+* Know <strong><code>the properties of determinants</code></strong>.
+  <strong><code>PROPERTIES OF DETERMINANTS</code></strong>
+    * If the matrix is in upper triangular form, the determinant equals the product of entries down the main diagonal.
+    * When two rows are interchanged, the determinant changes sign.
+    * If either two rows or two columns are identical, the determinant equals zero.
+    * If a matrix contains either a row of zeros or a column of zeros, the determinant equals zero.
+    * The determinant of an inverse matrix  𝐴−1  is the reciprocal of the determinant of the matrix 𝐴.
+    * If any row or column is multiplied by a constant, the determinant is multiplied by the same factor.</p>
+  <footer>
+    <p>Published: <time datetime="2024-01-09T21:54:00+08:00">
+      Tue 09 January 2024
+    </time></p>
+    <address>
+      By           <a href="https://abaelhe.github.io/author/abael-he.html">Abael He</a>
+          <a href="https://abaelhe.github.io/author/yijun-he.html">Yijun He</a>
+    </address>
+    <p>
+        Category: <a href="https://abaelhe.github.io/category/mathematics-algebra-ai-nlp-python.html">Mathematics, Algebra, AI, NLP, Python</a>
+    </p>
+    <p>
+        Tags:
+            <a href="https://abaelhe.github.io/tag/mathematics.html">Mathematics</a>
+            <a href="https://abaelhe.github.io/tag/algebra.html">Algebra</a>
+            <a href="https://abaelhe.github.io/tag/ai.html">AI</a>
+            <a href="https://abaelhe.github.io/tag/nlp.html">NLP</a>
+            <a href="https://abaelhe.github.io/tag/python.html">Python</a>
+            <a href="https://abaelhe.github.io/tag/publishing.html">publishing</a>
+            <a href="https://abaelhe.github.io/tag/management.html">Management</a>
+    </p>
+  </footer>
+  </article>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>
